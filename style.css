@@ -1,0 +1,159 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  background: radial-gradient(ellipse at center, #050505 0%, #000 100%);
+  color: #00ffe7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#start-screen {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#start-btn {
+  padding: 12px, 24px;
+  font-size: 1.2rem;
+  background: #00ffe7;
+  border: none;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 0 15px #00ffe7;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(20, 25px);
+  grid-template-rows: repeat(20, 25px);
+  gap: 1px;
+  margin-top: 20px;
+  border: 3px solid #00ffe7;
+  box-shadow: 0 0 20px #00ffe7;
+  background-color: #111;
+}
+
+#game-board div {
+  width: 25px;
+  height: 25px;
+  background-color: #1a1a1a;
+  transition: background-color 0.2s;
+}
+
+.blob {
+  background: radial-gradient(circle, #00ffe7 0%, #006666 80%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+.trail {
+  background: rgba(0, 255, 231, 0.2);
+  border-radius: 50%;
+  animation: fadeTrail 0.5s forwards;
+}
+
+@keyframes fadeTrail {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.food {
+  background: radial-gradient(circle, #ff0066, #330000);
+  border-radius: 50%;
+  animation: pulse 0.5s infinite alternate;
+}
+
+.dna {
+  background: linear-gradient(45deg, #00ff00, #004400);
+  border-radius: 4px;
+  box-shadow: 0 0 8px #00ff00;
+}
+
+.mutation {
+  background: linear-gradient(45deg, #ff00ff, #440044);
+  border-radius: 50%;
+  box-shadow: 0 0 8px #ff00ff;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+
+.info {
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#pause-btn {
+  padding: 6px 12px;
+  background: #444;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.touch-controls {
+  display: none;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.touch-controls .btn {
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  user-select: none;
+  box-shadow: 0 0 5px #00ffe7;
+}
+
+@media (max-width: 600px) {
+  .touch-controls {
+    display: flex;
+  }
+}
+
+/* Power-Up UI */
+#powerups {
+  display: flex;
+  gap: 10px;
+}
+
+.powerup-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+
+.bar {
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  background: #00ffe7;
+  transition: width 0.2s linear;
+}
