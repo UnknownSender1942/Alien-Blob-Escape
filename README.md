@@ -1,4 +1,4 @@
-# 👾 Alien Blob Escape (Early Design)
+# 👾 Alien Blob Escape 👾 (Early Design)
 
 **Alien Blob Escape** is a creative reimagining of the classic Snake game, where you control a weird, morphing alien blob inside a hostile alien biome. Instead of rigid square movement, the blob is rendered fluidly with dynamic visuals, glowing effects, and a trail system.
 
