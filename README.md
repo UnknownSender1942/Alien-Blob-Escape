@@ -1,5 +1,8 @@
 # 👾 Alien Blob Escape 👾 (Early Design)
 
+<img width="498" height="254" alt="alienblobescape" src="https://github.com/user-attachments/assets/8dc137d9-c20f-4928-a77c-808064ac88cc" />
+
+
 **Alien Blob Escape** is a creative reimagining of the classic Snake game, where you control a weird, morphing alien blob inside a hostile alien biome. Instead of rigid square movement, the blob is rendered fluidly with dynamic visuals, glowing effects, and a trail system.
 
 This is an **early prototype**, with core mechanics implemented using vanilla JavaScript, HTML5 Canvas, and CSS.
@@ -40,7 +43,7 @@ More polish, sounds, and sprite work will be added in upcoming versions.
 
 ## 📷 Screenshots
 
-<img width="498" height="254" alt="alienblobescape" src="https://github.com/user-attachments/assets/8dc137d9-c20f-4928-a77c-808064ac88cc" />
+<img width="612" height="631" alt="gameplay" src="https://github.com/user-attachments/assets/ebfd7c3a-092b-4e7d-8825-350f4cb87acf" />
 
 ---
 
